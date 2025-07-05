@@ -1,4 +1,5 @@
 import Contact from "./components/Contact.jsx";
+import Faq from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
 import Hero from "./components/Hero.jsx";
 import History from "./components/History.jsx";
@@ -16,6 +17,7 @@ const App = () => {
         <Hero />
         <History />
         <Projects />
+        <Faq />
         <Contact />
         <Footer />
       </div>

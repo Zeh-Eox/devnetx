@@ -1,6 +1,6 @@
 export const particlesColors = {
   particle: "#5b6bff",
-  background: "#f2f2f2",
+  background: "#10102e",
   black: "#000000",
 }
 
