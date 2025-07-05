@@ -45,7 +45,7 @@ const Faq = () => {
   return (
     <div className="min-h-screen bg-transparent flex flex-col gap-6 lg:gap-12 items-center justify-center px-4">
       <motion.h1
-        className="text-4xl md:text-6xl font-bold text-white text-center"
+        className="text-3xl md:text-6xl font-bold text-white text-center"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
