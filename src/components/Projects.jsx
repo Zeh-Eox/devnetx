@@ -119,8 +119,8 @@ const Projects = () => {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-32 right-16 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/3 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute bottom-32 right-16 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute top-1/2 left-1/3 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-200"></div>
       </div>
 
       <div
@@ -129,7 +129,7 @@ const Projects = () => {
       >
         {/* Title */}
         <div
-          className={`text-center space-y-4 transition-all duration-1000 ${
+          className={`text-center space-y-4 transition-all duration-300 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -147,7 +147,7 @@ const Projects = () => {
 
         {/* Category Filter */}
         <div
-          className={`flex flex-wrap gap-2 justify-center transition-all duration-1000 delay-300 ${
+          className={`flex flex-wrap gap-2 justify-center transition-all duration-300 delay-75 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -168,19 +168,19 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div
-          className={`w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 delay-500 ${
+          className={`w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-100 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className={`group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl cursor-pointer ${
+              className={`group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl cursor-pointer ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
               }`}
-              style={{ transitionDelay: `${index * 100 + 700}ms` }}
+              style={{ transitionDelay: `${index * 100 + 200}ms` }}
               onClick={() => setActiveProject(project.id)}
             >
               {/* Status Badge */}
@@ -237,7 +237,7 @@ const Projects = () => {
 
         {/* Call to Action */}
         <div
-          className={`text-center transition-all duration-1000 delay-1000 ${
+          className={`text-center transition-all duration-300 delay-300 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
