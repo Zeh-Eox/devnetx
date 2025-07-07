@@ -115,10 +115,10 @@ const Contact = () => {
           <p>
             Ou contactez-nous directement à{" "}
             <a
-              href="mailto:contact@devnetx.com"
+              href="mailto:contact@DevNetiX.com"
               className="text-blue-400 hover:text-blue-300 transition-colors underline"
             >
-              contact@devnetx.com
+              contact@devnetix.com
             </a>
           </p>
           <p className="mt-2">Ouagadougou, BURKINA FASO</p>

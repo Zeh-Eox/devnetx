@@ -1,1 +1,1 @@
-# DevNetX Startup Portfolio
+# DevNetiX Startup Portfolio

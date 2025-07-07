@@ -12,7 +12,7 @@ const descriptions = {
   firstDescription:
     "Tout a commencé par une idée simple : créer des solutions web innovantes qui transforment la façon dont les entreprises interagissent avec leurs clients.",
   secondDescription:
-    "En 2020, nous avons officiellement lancé DevNetX avec une équipe passionnée de développeurs déterminés à repousser les limites du possible.",
+    "En 2020, nous avons officiellement lancé DevNetiX avec une équipe passionnée de développeurs déterminés à repousser les limites du possible.",
   thirdDescription:
     "Aujourd'hui, nous continuons d'évoluer et d'explorer de nouvelles technologies pour offrir des expériences digitales exceptionnelles à nos clients.",
 };

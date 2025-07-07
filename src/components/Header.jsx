@@ -43,7 +43,7 @@ const Header = () => {
         }`}
       >
         <div className="logo text-[#5b6bff] font-bold text-2xl md:text-3xl">
-          DevNetX
+          DevNetiX
         </div>
 
         <nav className="hidden md:flex space-x-6 lg:space-x-8">

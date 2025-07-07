@@ -85,7 +85,7 @@ const Footer = () => {
               }`}
             >
               <h2 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                DevNetX
+                DevNetiX
               </h2>
               <p className="text-gray-400 leading-relaxed">
                 Votre partenaire pour des solutions web et mobile sur mesure.
@@ -191,7 +191,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail size={18} className="text-blue-400" />
-                  <span className="text-gray-400">contact@devnetx.com</span>
+                  <span className="text-gray-400">contact@devnetix.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone size={18} className="text-blue-400" />
@@ -211,7 +211,7 @@ const Footer = () => {
           <div className="border-t border-gray-700 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-gray-400 text-sm">
-                © {new Date().getFullYear()} DevNetX. Tous droits réservés.
+                © {new Date().getFullYear()} DevNetiX. Tous droits réservés.
               </p>
               <div className="flex space-x-6 text-sm">
                 <a

@@ -47,7 +47,7 @@ const Hero = () => {
               >
                 Bienvenue chez{" "}
                 <span className="text-[#5b6bff] bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  DevNetX
+                  DevNetiX
                 </span>
               </h1>
             </div>
