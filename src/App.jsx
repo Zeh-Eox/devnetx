@@ -8,7 +8,7 @@ import Projects from "./components/Projects.jsx";
 
 const App = () => {
   return (
-    <div className="relative min-h-screen w-screen overflow-y-auto bg-[#1a1a2e] scroll-smooth">
+    <div className="relative min-h-screen w-screen overflow-y-auto overflow-x-hidden bg-[#1a1a2e] scroll-smooth">
       <div className="fixed top-0 left-0 w-full h-full z-0">
         <ParticleComponent />
       </div>

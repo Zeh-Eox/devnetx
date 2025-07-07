@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-transparent text-white py-16 px-6 sm:px-12 min-h-screen flex flex-col items-center justify-center"
+      className="bg-[#10102e] text-white py-16 px-6 sm:px-12 min-h-screen flex flex-col items-center justify-center"
     >
       <div className="max-w-xl w-full text-center">
         <motion.h2

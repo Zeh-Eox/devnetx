@@ -43,7 +43,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="min-h-screen bg-transparent flex flex-col gap-6 lg:gap-12 items-center justify-center px-4">
+    <div className="min-h-screen bg-[#1a1a2e] flex flex-col gap-6 lg:gap-12 items-center justify-center px-4">
       <motion.h1
         className="text-3xl md:text-6xl font-bold text-white text-center"
         initial={{ opacity: 0, x: -50 }}

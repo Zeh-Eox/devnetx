@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const History = () => {
   return (
-    <div className="min-h-screen w-full p-6 flex flex-col gap-16 lg:gap-32 items-center justify-center bg-transparent">
+    <div className="min-h-screen w-full p-6 flex flex-col gap-16 lg:gap-32 items-center justify-center bg-[#1a1a2e] text-white">
       <motion.h1
         className="text-4xl md:text-6xl font-bold text-white text-center"
         initial={{ opacity: 0, x: -50 }}
