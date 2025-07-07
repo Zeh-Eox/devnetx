@@ -16,6 +16,7 @@
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
+    "framer-motion": "^12.23.0",
     "lucide-react": "^0.525.0",
     "motion": "^12.20.1",
     "react": "^19.1.0",
