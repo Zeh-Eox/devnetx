@@ -1,14 +1,14 @@
 import { Lightbulb, Edit3, Telescope } from "lucide-react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Descriptions, Titles } from "../types";
 
-// Mock data (replace with your actual utils)
-const titles = {
+const titles: Titles = {
   firstTitle: "L'Idée",
   secondTitle: "La Création",
   thirdTitle: "L'Expansion",
 };
 
-const descriptions = {
+const descriptions: Descriptions = {
   firstDescription:
     "Tout a commencé par une idée simple : créer des solutions web innovantes qui transforment la façon dont les entreprises interagissent avec leurs clients.",
   secondDescription:
@@ -17,9 +17,20 @@ const descriptions = {
     "Aujourd'hui, nous continuons d'évoluer et d'explorer de nouvelles technologies pour offrir des expériences digitales exceptionnelles à nos clients.",
 };
 
-// Timeline Layout Component
-const TimelineLayout = ({ icon, title, description, delay = 0 }) => {
-  const [isVisible, setIsVisible] = useState(false);
+interface TimelineLayoutProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  delay?: number;
+}
+
+const TimelineLayout: React.FC<TimelineLayoutProps> = ({
+  icon,
+  title,
+  description,
+  delay = 0,
+}) => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -52,8 +63,8 @@ const TimelineLayout = ({ icon, title, description, delay = 0 }) => {
   );
 };
 
-const History = () => {
-  const [titleVisible, setTitleVisible] = useState(false);
+const History: React.FC = () => {
+  const [titleVisible, setTitleVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

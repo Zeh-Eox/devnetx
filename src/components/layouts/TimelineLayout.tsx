@@ -1,6 +1,17 @@
 import { motion } from "motion/react";
+import React from "react";
 
-const TimelineLayout = ({ icon, title, description }) => {
+interface TimelineLayoutProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const TimelineLayout: React.FC<TimelineLayoutProps> = ({
+  icon,
+  title,
+  description,
+}) => {
   return (
     <motion.div
       className="bg-[#5b6bff] text-white p-6 sm:p-8 w-full max-w-lg h-[500px] rounded-xl shadow-lg flex flex-col items-center justify-center gap-4"

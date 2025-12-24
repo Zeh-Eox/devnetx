@@ -1,10 +1,9 @@
-import Contact from "./components/Contact.jsx";
-import Faq from "./components/Faq.jsx";
-import Footer from "./components/Footer.jsx";
-import Hero from "./components/Hero.jsx";
-import History from "./components/History.jsx";
-import ParticleComponent from "./components/particles/ParticleComponent.jsx";
-import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.js";
+import Faq from "./components/Faq.js";
+import Footer from "./components/Footer.js";
+import Hero from "./components/Hero.js";
+import History from "./components/History.js";
+import Projects from "./components/Projects.js";
 
 const App = () => {
   return (

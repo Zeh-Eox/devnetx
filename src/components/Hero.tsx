@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Header from "./Header";
 
 const Hero = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     setIsVisible(true);
