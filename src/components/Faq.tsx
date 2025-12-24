@@ -1,8 +1,21 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
-const FAQ_DATA = [
+interface FAQData {
+  question: string;
+  answer: React.ReactNode;
+}
+
+interface FAQItemProps {
+  item: FAQData;
+  index: number;
+  activeIndex: number | null;
+  toggleIndex: (index: number) => void;
+  shouldReduceMotion: boolean;
+}
+
+const FAQ_DATA: FAQData[] = [
   {
     question: "Comment puis-je contacter le support ?",
     answer: (
@@ -33,7 +46,7 @@ const FAQ_DATA = [
   },
 ];
 
-const FAQItem = ({
+const FAQItem: React.FC<FAQItemProps> = ({
   item,
   index,
   activeIndex,

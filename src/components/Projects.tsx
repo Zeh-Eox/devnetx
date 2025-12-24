@@ -1,9 +1,20 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Code, Smartphone, Globe, Database, Zap, Layers } from "lucide-react";
 
-const Projects = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [activeProject, setActiveProject] = useState(0);
+interface Project {
+  id: number;
+  title: string;
+  category: string;
+  description: string;
+  icon: React.ReactNode;
+  technologies: string[];
+  status: string;
+  color: string;
+}
+
+const Projects: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [activeProject, setActiveProject] = useState<number>(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,7 +37,7 @@ const Projects = () => {
   }, []);
 
   // Mock project data
-  const projects = [
+  const projects: Project[] = [
     {
       id: 1,
       title: "Application E-commerce",
@@ -95,7 +106,7 @@ const Projects = () => {
     },
   ];
 
-  const categories = [
+  const categories: string[] = [
     "Tous",
     "Web App",
     "Mobile App",
@@ -104,7 +115,7 @@ const Projects = () => {
     "Website",
     "Data Viz",
   ];
-  const [selectedCategory, setSelectedCategory] = useState("Tous");
+  const [selectedCategory, setSelectedCategory] = useState<string>("Tous");
 
   const filteredProjects =
     selectedCategory === "Tous"

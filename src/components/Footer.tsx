@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Mail,
   Phone,
@@ -9,9 +9,9 @@ import {
   ArrowUp,
 } from "lucide-react";
 
-const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [showScrollTop, setShowScrollTop] = useState(false);
+const Footer: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [showScrollTop, setShowScrollTop] = useState<boolean>(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
